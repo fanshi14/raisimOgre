@@ -13,6 +13,44 @@ material checkerboard
     }
 }
 
+material checkerboard_circus
+{
+    technique
+    {
+        pass
+        {
+             ambient 1 1 1 0.0
+             diffuse 1 1 1 0.0
+             emissive 0 0 0 0
+
+            texture_unit
+            {
+                texture checker_circus-2.png
+                scale 0.1 0.1
+            }
+        }
+    }
+}
+
+material checkerboard_soccer
+{
+    technique
+    {
+        pass
+        {
+             ambient 1 1 1 0.0
+             diffuse 1 1 1 0.0
+             emissive 0 0 0 0
+
+            texture_unit
+            {
+                texture checker_soccer.png
+                scale 0.1 0.1
+            }
+        }
+    }
+}
+
 material checkerboard_green
 {
     technique
