@@ -32,6 +32,26 @@ material checkerboard_circus
     }
 }
 
+material checkerboard_circus_transparent
+{
+    technique
+    {
+        pass
+        {
+               lighting off
+               scene_blend alpha_blend
+               depth_write off
+
+            texture_unit
+            {
+                texture checker_circus-2.png
+                scale 0.1 0.1
+                alpha_op_ex source1 src_manual src_current 0.6
+            }
+        }
+    }
+}
+
 material checkerboard_soccer
 {
     technique
